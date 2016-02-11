@@ -27,7 +27,7 @@ h4 {
 }
 
 a, a:hover {
-    color: #ffffff;
+    color: $green;
     text-decoration: none;
 }
 
@@ -41,11 +41,16 @@ header {
 }
 
 .btn {
+	margin-top: 30px;
     border: none;
     border-radius: 0;
     background: $green;
     text-transform: uppercase;
-    span {
+    color: $white;
+    &:hover {
+	    color: $white;
+	}
+	span {
         margin-left: 5px;
     }
 }
@@ -92,11 +97,11 @@ header.main-header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     /* image replacement properties */
     overflow: hidden;
-    text-indent: 100%;
+    //text-indent: 100%;
     white-space: nowrap;
 
     
-    background: rgba(0,0,0,0.5);
+    background: $green;
     visibility: hidden;
     opacity: 0;
 	@include transition(opacity .3s 0s, visibility 0s .3s);
@@ -108,6 +113,13 @@ header.main-header {
   	&.cd-is-visible { /* the button becomes visible */
   		visibility: visible;
   		opacity: 1;
+  		transform: rotate(180deg);
+  		span.icon {
+		  	color: $white;
+		  	line-height: 1.4em;
+		  	font-size: 2em;
+		  	margin-left: 0.20em;
+		}
     }
 	/* if the user keeps scrolling down, the button is out of focus and becomes less visible */
   	&.cd-fade-out { 
@@ -118,4 +130,5 @@ header.main-header {
   		background-color: $green;
   		opacity: 1;
   	}
+  	
 }

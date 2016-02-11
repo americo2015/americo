@@ -4100,6 +4100,10 @@ a.thumbnail.active {
   content: "\e900";
 }
 
+.icon-circle-up:before {
+  content: "\e900";
+}
+
 .icon-facebook:before {
   content: "\e906";
 }
@@ -4138,7 +4142,7 @@ h4 {
 }
 
 a, a:hover {
-  color: #ffffff;
+  color: #1abc9c;
   text-decoration: none;
 }
 
@@ -4152,10 +4156,15 @@ header {
 }
 
 .btn {
+  margin-top: 30px;
   border: none;
   border-radius: 0;
   background: #1abc9c;
   text-transform: uppercase;
+  color: #ffffff;
+}
+.btn:hover {
+  color: #ffffff;
 }
 .btn span {
   margin-left: 5px;
@@ -4221,9 +4230,8 @@ header.main-header.show {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   /* image replacement properties */
   overflow: hidden;
-  text-indent: 100%;
   white-space: nowrap;
-  background: rgba(0, 0, 0, 0.5);
+  background: #1abc9c;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
@@ -4240,6 +4248,13 @@ header.main-header.show {
   /* the button becomes visible */
   visibility: visible;
   opacity: 1;
+  transform: rotate(180deg);
+}
+.cd-top.cd-is-visible span.icon {
+  color: #ffffff;
+  line-height: 1.4em;
+  font-size: 2em;
+  margin-left: 0.20em;
 }
 .cd-top.cd-fade-out {
   opacity: .5;
@@ -4378,7 +4393,7 @@ ABOUT SECTION
   animation: photoshop 1s ease-out forwards;
 }
 #skills .bar .level.wordpress.start {
-  height: 80%;
+  height: 70%;
   background-color: #1abc9c;
   opacity: 1;
   -webkit-animation: wordpress 1s ease-out forwards;
@@ -4498,7 +4513,7 @@ ABOUT SECTION
     height: 0px;
   }
   100% {
-    height: 80%;
+    height: 70%;
   }
 }
 @-webkit-keyframes wordpress {
@@ -4506,7 +4521,7 @@ ABOUT SECTION
     height: 0px;
   }
   100% {
-    height: 80%;
+    height: 70%;
   }
 }
 @keyframes wordpress {
@@ -4514,7 +4529,7 @@ ABOUT SECTION
     height: 0px;
   }
   100% {
-    height: 80%;
+    height: 70%;
   }
 }
 @-moz-keyframes sharepoint {
@@ -4622,6 +4637,9 @@ BACKGROUND SECTION
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+#work .thumbnail a, #work .thumbnail a:hover {
+  color: #ffffff;
+}
 #work .thumbnail .caption {
   position: absolute;
   top: 0;
@@ -4662,6 +4680,19 @@ footer .icon {
   border-radius: 50%;
   padding: 18px;
   display: block;
+}
+footer .media {
+  margin-top: 50px !important;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+footer .media:first-child {
+  margin-top: 0;
+}
+footer .media.fade-in {
+  opacity: 1;
 }
 footer .media-body {
   vertical-align: middle;

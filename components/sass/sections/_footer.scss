@@ -10,6 +10,16 @@ footer {
         display: block;
     }
     
+    .media {
+	    &:first-child { margin-top: 0; }
+	    margin-top: 50px !important;
+	    opacity: 0;
+	    @include transition(all 0.5s ease-in-out);
+	    &.fade-in {
+			opacity: 1;    
+	    }
+    }
+    
     .media-body {
         vertical-align: middle;
         h4 {

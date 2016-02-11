@@ -40,7 +40,7 @@ ABOUT SECTION
             }
             
             &.wordpress.start {
-                @include start-chart-animation(80%, #1abc9c, 1);
+                @include start-chart-animation(70%, #1abc9c, 1);
                 @include animation('wordpress 1s ease-out forwards');
             }
             
@@ -67,9 +67,9 @@ ABOUT SECTION
     @-webkit-keyframes photoshop   { 0% { height: 0px; } 100% { height: 80%; }}
     @keyframes photoshop           { 0% { height: 0px; } 100% { height: 80%; }}
     
-    @-moz-keyframes wordpress      { 0% { height: 0px; } 100% { height: 80%; }}
-    @-webkit-keyframes wordpress   { 0% { height: 0px; } 100% { height: 80%; }}
-    @keyframes wordpress           { 0% { height: 0px; } 100% { height: 80%; }}
+    @-moz-keyframes wordpress      { 0% { height: 0px; } 100% { height: 70%; }}
+    @-webkit-keyframes wordpress   { 0% { height: 0px; } 100% { height: 70%; }}
+    @keyframes wordpress           { 0% { height: 0px; } 100% { height: 70%; }}
     
     @-moz-keyframes sharepoint      { 0% { height: 0px; } 100% { height: 70%; }}
     @-webkit-keyframes sharepoint   { 0% { height: 0px; } 100% { height: 70%; }}
